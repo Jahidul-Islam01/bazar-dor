@@ -58,3 +58,12 @@ https://github.com/Jahidul-Islam01/bazar-dor
 The project is deployed on Vercel and supports dynamic product and category routes.
 
 Live URL: https://bazar-dor-khaki-eight.vercel.app/
+
+## Authentication Features
+
+- Email and password registration
+- Email and password login
+- Google OAuth login
+- GitHub OAuth login
+- Protected product details
+- User profile update
