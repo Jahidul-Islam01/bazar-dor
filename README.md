@@ -53,3 +53,8 @@ https://bazar-dor-khaki-eight.vercel.app/
 ## 💻 GitHub Repository
 
 https://github.com/Jahidul-Islam01/bazar-dor
+## Deployment
+
+The project is deployed on Vercel and supports dynamic product and category routes.
+
+Live URL: https://bazar-dor-khaki-eight.vercel.app/
