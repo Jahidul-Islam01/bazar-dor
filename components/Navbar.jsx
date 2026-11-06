@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,18 +10,18 @@ import { getBanglaDate } from "@/lib/helpers";
 import { authClient } from "@/lib/auth-client";
 
 const categories = [
-  { name: "চাল", icon: "🍚", slug: "chal" },
-  { name: "ডাল", icon: "🫘", slug: "dal" },
-  { name: "তেল", icon: "🛢️", slug: "tel" },
-  { name: "সবজি", icon: "🥬", slug: "sobji" },
-  { name: "মাছ", icon: "🐟", slug: "mach" },
-  { name: "মাংস", icon: "🍗", slug: "mangsho" },
+  { name: "à¦šà¦¾à¦²", icon: "ðŸš", slug: "chal" },
+  { name: "à¦¡à¦¾à¦²", icon: "ðŸ«˜", slug: "dal" },
+  { name: "à¦¤à§‡à¦²", icon: "ðŸ›¢ï¸", slug: "tel" },
+  { name: "à¦¸à¦¬à¦œà¦¿", icon: "ðŸ¥¬", slug: "sobji" },
+  { name: "à¦®à¦¾à¦›", icon: "ðŸŸ", slug: "mach" },
+  { name: "à¦®à¦¾à¦‚à¦¸", icon: "ðŸ—", slug: "mangsho" },
   {
-    name: "ডিম-দুধ",
-    icon: "🥛",
+    name: "à¦¡à¦¿à¦®-à¦¦à§à¦§",
+    icon: "ðŸ¥›",
     slug: "dim-dui",
   },
-  { name: "মসলা", icon: "🌶️", slug: "mosla" },
+  { name: "à¦®à¦¸à¦²à¦¾", icon: "ðŸŒ¶ï¸", slug: "mosla" },
 ];
 
 export default function Navbar() {
@@ -36,14 +36,14 @@ export default function Navbar() {
       await authClient.signOut();
 
       toast.success(
-        "সফলভাবে লগআউট হয়েছে"
+        "à¦¸à¦«à¦²à¦­à¦¾à¦¬à§‡ à¦²à¦—à¦†à¦‰à¦Ÿ à¦¹à¦¯à¦¼à§‡à¦›à§‡"
       );
 
       router.push("/");
       router.refresh();
     } catch {
       toast.error(
-        "লগআউট করা যায়নি"
+        "à¦²à¦—à¦†à¦‰à¦Ÿ à¦•à¦°à¦¾ à¦¯à¦¾à¦¯à¦¼à¦¨à¦¿"
       );
     }
   };
@@ -59,7 +59,7 @@ export default function Navbar() {
             >
               <Image
                 src="/assets/logo-icon.png"
-                alt="বাজার দর"
+                alt="à¦¬à¦¾à¦œà¦¾à¦° à¦¦à¦°"
                 width={44}
                 height={44}
                 priority
@@ -68,7 +68,7 @@ export default function Navbar() {
 
               <div>
                 <h2 className="text-[22px] font-bold leading-6 text-[#1d271f]">
-                  বাজার দর
+                  à¦¬à¦¾à¦œà¦¾à¦° à¦¦à¦°
                 </h2>
 
                 <p className="mt-0.5 hidden text-xs text-[#667069] sm:block">
@@ -85,14 +85,14 @@ export default function Navbar() {
                     href="/signin"
                     className="flex h-10 items-center justify-center rounded-lg px-4 text-sm font-semibold text-[#1d271f] transition hover:bg-[#f0f5f0]"
                   >
-                    সাইন ইন
+                    à¦¸à¦¾à¦‡à¦¨ à¦‡à¦¨
                   </Link>
 
                   <Link
                     href="/signup"
                     className="flex h-10 items-center justify-center rounded-lg bg-[#05893e] px-4 text-sm font-semibold text-white transition hover:bg-[#047f39]"
                   >
-                    সাইন আপ
+                    à¦¸à¦¾à¦‡à¦¨ à¦†à¦ª
                   </Link>
                 </>
               )}
@@ -112,7 +112,7 @@ export default function Navbar() {
 
                     <span className="hidden sm:inline">
                       {session.user?.name ||
-                        "প্রোফাইল"}
+                        "à¦ªà§à¦°à§‹à¦«à¦¾à¦‡à¦²"}
                     </span>
                   </Link>
 
@@ -121,7 +121,7 @@ export default function Navbar() {
                     onClick={handleLogout}
                     className="flex h-10 items-center justify-center rounded-lg px-4 text-sm font-semibold text-[#d03739] transition hover:bg-[#fdecec]"
                   >
-                    লগআউট
+                    à¦²à¦—à¦†à¦‰à¦Ÿ
                   </button>
                 </>
               )}
